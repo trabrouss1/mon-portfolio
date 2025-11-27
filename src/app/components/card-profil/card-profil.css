@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+div[data-profil] {
+  overflow: hidden;
+}
+
+div[data-profil]:hover {
+  transform: translateY(-4px);
+}

@@ -1,0 +1,22 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  @for (profil of profils; track profil.id) {
+  <div class="border border-gray-300 bg-white/40 backdrop-blur-sm px-8 py-10 text-center rounded-xl hover:shadow-xl transition-all duration-300 relative group"
+    [attr.data-profil]="profil.id">
+
+    <div class="absolute inset-0 border-2 border-purple-400 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      style="mask-image: radial-gradient(150px at center, black, transparent);">
+    </div>
+
+    <!-- Icon -->
+    <div class="inline-flex h-14 w-14 bg-white border-2 border-black text-black justify-center items-center rounded-lg mb-6" 
+      [innerHTML]="getIconSvg(profil.icon)">
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ profil.title }}</h3>
+
+    <!-- Description -->
+    <p class="text-gray-700 leading-relaxed">{{ profil.description }}</p>
+  </div>
+  }
+</div>

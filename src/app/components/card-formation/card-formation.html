@@ -1,0 +1,227 @@
+<!-- Education & Certifications Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <!-- Education Card -->
+  @for (formation of formations; track formation.id) {
+    <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-orange-500 hover:shadow-xl transition-all duration-300">
+      <div class="flex items-start gap-6">
+        <!-- Icon -->
+        <div class="flex-shrink-0">
+          <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center ">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-1"> {{formation.diplome}} </h3>
+              <p class="text-orange-600 font-semibold">{{formation.ecole}}</p>
+            </div>
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">{{formation.annee}}</span>
+          </div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            {{formation.description}}
+          </p>
+          <!-- <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Développement Web</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Architecture</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Base de données</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Certification Card 1 -->
+  <!-- <div
+    class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0">
+        <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-1">AWS Certified Solutions Architect</h3>
+            <p class="text-blue-600 font-semibold">Amazon Web Services</p>
+          </div>
+          <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">2023</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Certification professionnelle validant l'expertise en conception et déploiement d'applications évolutives
+          sur AWS.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+            <span>Voir le certificat</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Education Card 2 -->
+  <!-- <div
+    class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-purple-500 hover:shadow-xl transition-all duration-300">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-1">Licence en Génie Logiciel</h3>
+            <p class="text-purple-600 font-semibold">École Polytechnique</p>
+          </div>
+          <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">2017 - 2020</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Formation complète en programmation, algorithmique et développement logiciel avec mention très bien.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Algorithmique</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">POO</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Réseaux</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Certification Card 2 -->
+  <!-- <div
+    class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-500 hover:shadow-xl transition-all duration-300">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-1">MongoDB Certified Developer</h3>
+            <p class="text-green-600 font-semibold">MongoDB University</p>
+          </div>
+          <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">2024</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Expertise certifiée en conception de schémas, optimisation de requêtes et gestion de bases de données
+          MongoDB.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium">
+            <span>Voir le certificat</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Certification Card 3 -->
+  <!-- <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-red-500 hover:shadow-xl transition-all duration-300">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0">
+        <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-1">React Advanced Certification</h3>
+            <p class="text-red-600 font-semibold">Meta (Facebook)</p>
+          </div>
+          <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">2023</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Certification avancée couvrant hooks, performance, patterns avancés et meilleures pratiques React.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium">
+            <span>Voir le certificat</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Certification Card 4 -->
+  <!-- <div
+    class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-indigo-500 hover:shadow-xl transition-all duration-300">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-xl flex items-center justify-center">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-1">Google Cloud Professional</h3>
+            <p class="text-indigo-600 font-semibold">Google Cloud</p>
+          </div>
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">2024</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Certification professionnelle en architecture cloud, déploiement et gestion d'applications sur Google Cloud
+          Platform.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium">
+            <span>Voir le certificat</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>

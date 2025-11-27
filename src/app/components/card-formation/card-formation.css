@@ -1,0 +1,12 @@
+:host { display:block; }
+
+.bg-white:hover { transform: translateY(-4px); transition: transform .2s ease; }
+
+/* fallback si tailwind JIT n'a pas compilé certaines classes dynamiques */
+.w-16{ width:4rem; } .h-16{ height:4rem; } .rounded-xl{ border-radius:0.75rem; }
+.from-orange-400.to-orange-600{ background-image: linear-gradient(135deg, #fb923c, #f97316); }
+.from-blue-400.to-blue-600{ background-image: linear-gradient(135deg, #60a5fa, #2563eb); }
+.from-purple-400.to-purple-600{ background-image: linear-gradient(135deg, #a78bfa, #7c3aed); }
+.from-green-400.to-green-600{ background-image: linear-gradient(135deg, #86efac, #16a34a); }
+.from-indigo-400.to-indigo-600{ background-image: linear-gradient(135deg, #818cf8, #4f46e5); }
+.from-red-400.to-red-600{ background-image: linear-gradient(135deg, #f87171, #ef4444); }
