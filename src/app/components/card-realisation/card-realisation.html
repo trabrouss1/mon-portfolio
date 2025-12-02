@@ -1,0 +1,28 @@
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  @for (realisation of realisations; track realisation.id) {
+    <div class="bg-white rounded-3xl p-10 max-w-sm w-full shadow-xl relative overflow-hidden">
+      <div class="flex gap-4 mb-8 flex-wrap">
+        <span class="text-orange-500 text-sm font-medium bg-orange-50 px-4 py-2 rounded-lg">{{realisation.language}}</span>
+        <span class="text-blue-600 text-sm font-medium bg-blue-50 px-4 py-2 rounded-lg">{{realisation.model}}</span>
+      </div>
+    
+      <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-300 rounded-xl mb-5 flex items-center justify-center text-white text-2xl font-bold">
+        {{realisation.symbol}}
+      </div>
+    
+      <h1 class="text-4xl font-bold text-gray-900 mb-5 tracking-tight">{{realisation.name}}</h1>
+    
+      <p class="text-gray-600 text-base leading-relaxed mb-8">
+        {{realisation.description}}
+      </p>
+    
+      <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-3 transition-all duration-300 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 hover:-translate-y-1">
+        View Project <span class="text-lg">→</span>
+      </button>
+    
+      <div class="decoration absolute -bottom-8 -right-8 w-36 h-36 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full opacity-50">
+        <div class="absolute top-8 left-8 w-24 h-24 bg-white rounded-full"></div>
+      </div>
+    </div>
+  }
+</div>

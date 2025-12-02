@@ -5,10 +5,11 @@ import { AfterNavbar } from './components/after-navbar/after-navbar';
 import { HeroSection } from './components/hero-section/hero-section';
 import { Profil } from './components/profil/profil';
 import { Formation } from './components/formation/formation';
+import { Realisation } from "./components/realisation/realisation";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, AfterNavbar, HeroSection, Profil, Formation],
+  imports: [RouterOutlet, Navbar, AfterNavbar, HeroSection, Profil, Formation, Realisation],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
