@@ -5,4 +5,5 @@ export class RealisationModel {
   model?: string;
   symbol?: string;
   language?: string;
+  imageUrl?: string;
 }
