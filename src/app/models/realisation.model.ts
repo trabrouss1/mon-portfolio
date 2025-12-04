@@ -3,7 +3,7 @@ export class RealisationModel {
   name?: string;
   description?: string;
   model?: string;
-  symbol?: string;
-  language?: string;
+  languages?: string[]
   imageUrl?: string;
+  link?: string
 }
