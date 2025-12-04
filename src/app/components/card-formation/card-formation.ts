@@ -1,4 +1,4 @@
-import { Component, Inject, Input } from '@angular/core';
+import { Component, inject, Inject, Input, OnInit } from '@angular/core';
 import { FormationModel } from '../../models/formation.model';
 import { formationService } from '../../services/formation';
 
@@ -10,11 +10,13 @@ import { formationService } from '../../services/formation';
   styleUrl: './card-formation.css',
 })
 
-export class CardFormation {
+export class CardFormation implements OnInit {
 
   formations: FormationModel[] = [];
 
-  constructor(private formationService: formationService) {
+  private formationService = inject(formationService)
+  
+  ngOnInit(): void {
     this.formations = this.formationService.getFormations();
   }
 

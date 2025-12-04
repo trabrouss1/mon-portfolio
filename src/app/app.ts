@@ -7,10 +7,11 @@ import { Profil } from './components/profil/profil';
 import { Formation } from './components/formation/formation';
 import { Realisation } from "./components/realisation/realisation";
 import { Footer } from "./components/footer/footer";
+import { Experience } from "./components/experience/experience";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, AfterNavbar, HeroSection, Profil, Formation, Realisation, Footer],
+  imports: [RouterOutlet, Navbar, AfterNavbar, HeroSection, Profil, Formation, Realisation, Footer, Experience],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

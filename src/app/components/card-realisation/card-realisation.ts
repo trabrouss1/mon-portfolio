@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RealisationService } from '../../services/realisation';
 import { RealisationModel } from '../../models/realisation.model';
 
@@ -8,11 +8,15 @@ import { RealisationModel } from '../../models/realisation.model';
   templateUrl: './card-realisation.html',
   styleUrl: './card-realisation.css',
 })
-export class CardRealisation {
-  
-  realisations: RealisationModel[] = [];
 
-  constructor(private realisationService: RealisationService) {
+export class CardRealisation implements OnInit {
+
+  realisations: RealisationModel[] = [];
+  
+  private realisationService = inject(RealisationService)
+  
+  ngOnInit(): void {
     this.realisations = this.realisationService.getRealisations();
   }
+  
 }

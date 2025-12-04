@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ProfilModel } from '../../models/profil.model';
 import { ProfilService } from '../../services/profil';
 
@@ -10,11 +10,13 @@ import { ProfilService } from '../../services/profil';
   styleUrl: './card-profil.css',
 })
 
-export class CardProfil {
+export class CardProfil implements OnInit {
 
   profils: ProfilModel[] = [];
+
+  private profilService = inject(ProfilService)
   
-  constructor(private profilService: ProfilService) {
+  ngOnInit(): void {
     this.profils = this.profilService.getProfil();
   }
 
