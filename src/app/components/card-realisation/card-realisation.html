@@ -2,7 +2,7 @@
   @for (realisation of realisations; track realisation.id) {
     <div class="bg-white rounded-3xl p-10 max-w-sm w-full shadow-xl relative overflow-hidden">
       
-      <div class="absolute top-0 left-0 right-0 h-48 bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 opacity-20"></div>
+      <div class="absolute top-0 left-0 right-0 h-48 bg-linear-to-br from-green-400 via-blue-500 to-purple-600 opacity-20"></div>
       <div class="relative mb-6">
         <img id="cardImage" [src]="realisation.imageUrl"
           alt="Project" class="w-full h-48 object-cover rounded-2xl shadow-md">
@@ -13,7 +13,7 @@
         <span class="text-blue-600 text-sm font-medium bg-blue-50 px-4 py-2 rounded-lg">{{realisation.model}}</span>
       </div>
     
-      <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-300 rounded-xl mb-5 flex items-center justify-center text-white text-2xl font-bold">
+      <div class="w-12 h-12 bg-linear-to-br from-green-500 to-green-300 rounded-xl mb-5 flex items-center justify-center text-white text-2xl font-bold">
         {{realisation.symbol}}
       </div>
     
@@ -28,7 +28,7 @@
         View Project <span class="text-lg">→</span>
       </button>
     
-      <div class="decoration absolute -bottom-8 -right-8 w-36 h-36 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full opacity-50">
+      <div class="decoration absolute -bottom-8 -right-8 w-36 h-36 bg-linear-to-br from-gray-100 to-gray-200 rounded-full opacity-50">
         <div class="absolute top-8 left-8 w-24 h-24 bg-white rounded-full"></div>
       </div>
     </div>
