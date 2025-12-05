@@ -1,11 +1,12 @@
-import { Component, inject, Inject, Input, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormationModel } from '../../models/formation.model';
 import { formationService } from '../../services/formation';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
   selector: 'app-card-formation',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './card-formation.html',
   styleUrl: './card-formation.css',
 })

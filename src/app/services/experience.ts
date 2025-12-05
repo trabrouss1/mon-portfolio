@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ExperienceModel } from '../models/experience.model';
+import { formatDate } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
@@ -31,6 +32,12 @@ export class ExperienceService {
 
   getExperiences(): ExperienceModel[] {
     return this.experiences;
+  }
+
+  obtenirAnneeFormatee(dateDebut : Date, dateFin: Date): string {
+    const debut = formatDate(dateDebut, 'yyyy', 'fr-FR');
+    const fin = formatDate(dateFin, 'yyyy', 'fr-FR');
+    return `${debut} - ${fin}`;
   }
 
 }

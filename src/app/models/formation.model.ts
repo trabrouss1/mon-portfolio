@@ -1,7 +1,8 @@
 export class FormationModel {
   id?: string;
   diplome?: string;
-  annee?: string;
+  startDate?: Date;
+  endDate?: Date | null;
   ecole?: string;
   description?: string;
   lien?: string;
