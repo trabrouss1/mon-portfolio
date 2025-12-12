@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="fr" class="scroll-smooth">
+  <head>
   <meta charset="utf-8">
   <title>Beh Aboudramane TRAORE | Mon portfolio </title>
   <base href="/">
@@ -14,8 +14,52 @@
   J'aime apprendre de nouvelles choses et partager mes connaissances. Découvrez mes projets, compétences et expériences professionnelles à travers mon portfolio.  
   Je suis également passionné des jeux vidéo">
   <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+  <style>
+    /* État initial : invisible et légèrement décalé vers le bas */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+  
+    /* État actif : visible et à sa place réelle */
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body>
-  <app-root></app-root>
+<!-- <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300"> -->
+<body class="bg-slate-50 dark:bg-slate-950 transition-colors duration-500">
+    <app-root></app-root>
+    <script>
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const darkIcon = document.getElementById('theme-toggle-dark-icon');
+      const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+      // Vérifier les préférences au chargement
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        lightIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        darkIcon.classList.remove('hidden');
+      }
+
+      themeToggleBtn.addEventListener('click', function () {
+        // Toggle icons
+        darkIcon.classList.toggle('hidden');
+        lightIcon.classList.toggle('hidden');
+
+        // Si le mode sombre était activé
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      });
+    </script>
 </body>
 </html>
