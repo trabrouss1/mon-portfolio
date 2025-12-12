@@ -1,22 +1,19 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   @for (profil of profils; track profil.id) {
-  <div class="border border-gray-300 bg-white/40 backdrop-blur-sm px-8 py-10 text-center rounded-xl hover:shadow-xl transition-all duration-300 relative group"
+  <div class="border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-8 py-10 text-center rounded-xl hover:shadow-2xl dark:hover:shadow-orange-900/40 transition-all duration-300 relative group"
     [attr.data-profil]="profil.id">
 
-    <div class="absolute inset-0 border-2 border-purple-400 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    <div class="absolute inset-0 border-2 border-orange-500 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       style="mask-image: radial-gradient(150px at center, black, transparent);">
     </div>
 
-    <!-- Icon -->
-    <div class="inline-flex h-14 w-14 bg-white border-2 border-black text-black justify-center items-center rounded-lg mb-6" 
+    <div class="inline-flex h-14 w-14 bg-orange-100 dark:bg-orange-900/20 border-2 border-orange-500 text-orange-600 justify-center items-center rounded-lg mb-6 transition-colors"
       [innerHTML]="getIconSvg(profil.icon)">
     </div>
 
-    <!-- Title -->
-    <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ profil.title }}</h3>
+    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">{{ profil.title }}</h3>
 
-    <!-- Description -->
-    <p class="text-gray-700 leading-relaxed">{{ profil.description }}</p>
+    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">{{ profil.description }}</p>
   </div>
   }
 </div>
