@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AfterNavbar {
 
+  experience : string = 'trois (03)';
+
 }

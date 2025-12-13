@@ -4,8 +4,7 @@
     hover:shadow-xl dark:hover:shadow-orange-900/40 border border-slate-100 dark:border-slate-700 group overflow-hidden cursor-pointer"
     [style.border-bottom]="'4px solid ' + tech.couleur">
 
-    <img [src]="tech.iconeUrl" [alt]="'Icône de ' + tech.nom" class="w-10 h-10 md:w-12 md:h-12 object-contain mb-2 
-        filter grayscale dark:invert group-hover:grayscale-0 transition-all duration-300" />
+    <img [src]="tech.iconeUrl" [alt]="'Icône de ' + tech.nom" class="w-10 h-10 md:w-12 md:h-12 object-contain mb-2 filter grayscale group-hover:grayscale-0 transition-all duration-300"/>
     <p class="text-xs md:text-sm font-bold text-slate-600 dark:text-slate-300 text-center mt-1 group-hover:text-slate-900 dark:group-hover:text-white transition-colors duration-300">
       {{ tech.nom }}
     </p>

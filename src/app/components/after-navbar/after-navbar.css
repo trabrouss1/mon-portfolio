@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Définit l'animation de base : invisible et légèrement décalé vers le bas au départ */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* * Classe de base pour l'animation. 
+ * Rend l'élément initialement transparent et applique l'animation.
+ */
+.fade-in-item {
+  opacity: 0;
+  /* Important pour cacher l'élément au départ */
+  animation-name: fade-in-up;
+  animation-duration: 0.8s;
+  /* Durée de l'animation */
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  /* Maintient l'état final (visible) */
+}
+
+/* Classes pour le délai d'apparition (à ajuster selon vos besoins) */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.3s;
+}
+
+.delay-3 {
+  animation-delay: 0.5s;
+}
+
+.delay-4 {
+  animation-delay: 0.7s;
+}
+
+.delay-5 {
+  animation-delay: 0.9s;
+}
+
+.delay-6 {
+  animation-delay: 1.1s;
+}
+
+.delay-7 {
+  animation-delay: 1.3s;
+}
