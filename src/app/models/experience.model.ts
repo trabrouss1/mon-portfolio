@@ -5,4 +5,5 @@ export class ExperienceModel {
   startDate?: Date;
   endDate?: Date | null;
   description?: string;
+  logoUrl?: string;
 }

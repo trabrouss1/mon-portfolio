@@ -13,19 +13,21 @@ export class ExperienceService {
     this.experiences = [
       {
         id: 1,
-        title: 'Développeur Full Stack',
-        company: 'Tech Solutions',
+        title: 'Développeur Java Backend',
+        company: 'Institut Des Sciences Islamiques - (ISI)',
         startDate: new Date('2022-01-15'),
         endDate: null,
-        description: 'Développement et maintenance d\'applications web en utilisant Angular et Node.js.'
+        description: 'Développement et maintenance d’applications web avec PHP (Symfony). Aujourd’hui, je travaille avec Java (Spring Boot) pour le backend afin de créer des applications modernes, performantes et maintenables.',
+        logoUrl: 'assets/images/isi-logo.png'
       },
       {
         id: 2,
-        title: 'Stagiaire Développeur Frontend',
-        company: 'Web Innovators',
-        startDate: new Date('2021-06-01'),
-        endDate: new Date('2021-12-31'),
-        description: 'Participation à la création d\'interfaces utilisateur réactives avec Angular.'
+        title: 'Développeur Full Stack',
+        company: 'Diaspora',
+        startDate: new Date('2024-06-01'),
+        endDate: new Date('2025-12-31'),
+        description: 'Participation à la création de plusieurs applications (plus de détails dans la section Réalisations).',
+        logoUrl: 'assets/imgs/logo_diaspora_night.jpg'
       }
     ];
   }
