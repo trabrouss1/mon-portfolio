@@ -16,10 +16,13 @@ export class StackService {
       { nom: 'Java', iconeUrl: 'icons/java.png', couleur: '#FF9900' },
       { nom: 'SpringBoot', iconeUrl: 'icons/spring_boot.png', couleur: '#E0234E'},
       { nom: 'PostgreSQL', iconeUrl: 'icons/postgresql.png', couleur: '#336791'},
+      { nom: 'Mysql', iconeUrl: 'icons/mysql.svg', couleur: '#336791'},
       { nom: 'Docker', iconeUrl: 'icons/docker.svg', couleur: '#2496ED'},
       { nom: 'Git', iconeUrl: 'icons/git.png', couleur: '#F05032'},
-      { nom: 'AWS', iconeUrl: 'icons/aws.jpeg', couleur: '#FF9900'},
-      { nom: 'Symfony', iconeUrl: 'icons/symfony.svg', couleur: '#FF9900'},
+      { nom: 'PHP', iconeUrl: 'icons/php.svg', couleur: '#336791'},
+      // { nom: 'AWS', iconeUrl: 'icons/aws.jpeg', couleur: '#FF9900'},
+      { nom: 'Symfony', iconeUrl: 'icons/symfony.svg', couleur: '#c0392b'},
+      { nom: 'Bootstrap', iconeUrl: 'icons/bootstrap.png', couleur: '#6610f2'},
     ];
   }
 
