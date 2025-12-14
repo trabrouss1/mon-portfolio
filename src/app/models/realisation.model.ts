@@ -6,4 +6,6 @@ export class RealisationModel {
   languages?: string[]
   imageUrl?: string;
   link?: string
+  role?: string;
+  company?: string;
 }
