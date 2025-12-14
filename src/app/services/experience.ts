@@ -15,10 +15,11 @@ export class ExperienceService {
         id: 1,
         title: 'Développeur Full Stack',
         company: 'Institut Des Sciences Islamiques - (ISI)',
-        startDate: new Date('2022-01-15'),
+        startDate: new Date('2021-01-28'),
         endDate: null,
         description: 'Développement et maintenance d’applications web avec PHP (Symfony). Aujourd’hui, je travaille avec Java (Spring Boot) pour le backend afin de créer des applications modernes, performantes et maintenables.',
-        logoUrl: 'assets/images/isi-logo.png'
+        logoUrl: 'assets/images/isi-logo.png',
+        location: 'Abidjan, Anyama'
       },
       {
         id: 2,
@@ -27,7 +28,8 @@ export class ExperienceService {
         startDate: new Date('2024-06-01'),
         endDate: null,
         description: 'Participation à la création de plusieurs applications (plus de détails dans la section Réalisations).',
-        logoUrl: 'assets/imgs/logo_diaspora_night.jpg'
+        logoUrl: 'assets/imgs/logo_diaspora_night.jpg',
+        location: 'Abidjan, Treichville'
       }
     ];
   }
