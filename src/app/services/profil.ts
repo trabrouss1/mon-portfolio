@@ -34,31 +34,7 @@ export class ProfilService {
         utilisateur à l'architecture serveur, en passant par l'intégration d'APIs et le déploiement, je maîtrise chaque étape 
         du développement web moderne ! 🚀`,
         icon: 'fullstack',
-      },
-      {
-        id: 'design',
-        title: 'UI/UX Design',
-        description: `Le design n'est pas seulement une question d'esthétique, c'est une question d'expérience. Je conçois des 
-        interfaces intuitives et élégantes qui placent l'utilisateur au centre. Chaque pixel, chaque interaction est pensée 
-        pour offrir une expérience fluide et mémorable ! ✨`,
-        icon: 'design',
-      },
-      {
-        id: 'performance',
-        title: 'Performance',
-        description: `La vitesse est essentielle dans le web moderne. J'optimise chaque aspect de vos applications pour garantir des 
-        temps de chargement rapides, une navigation fluide et une expérience utilisateur optimale sur tous les appareils. 
-        Performance et qualité vont de pair ! ⚡`,
-        icon: 'performance',
-      },
-      {
-        id: 'security',
-        title: 'Sécurité',
-        description: `La sécurité n'est pas une option, c'est une priorité. J'implémente les meilleures pratiques de sécurité : 
-        authentification robuste, protection contre les failles courantes, encryption des données sensibles et conformité aux 
-        standards de l'industrie pour protéger vos utilisateurs ! 🔒`,
-        icon: 'security',
-      },
+      }
     ];
   }
 
