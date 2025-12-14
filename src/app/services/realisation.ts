@@ -64,8 +64,8 @@ export class RealisationService {
         name: 'Immo',
         description: 'Une plateforme de gestion immobilière qui permet aux propriétaires de suivre et gérer facilement leurs biens, de la location à l’entretien, en passant par le suivi des paiements et des contrats, tout en offrant des outils d’organisation et de communication centralisés.',
         languages: ["Symfony", "Mysql", "Bootstrap"],
-        imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop',
-        link: 'https://gitlab.com/youstra/immo-project-master/-/tree/trabrouss?ref_type=heads',
+        imageUrl: 'imgs/immo_login.png',
+        link: 'https://immo.youstra.ci',
         role: 'Full Stack Developer',
         company: 'Diaspora'
       },
