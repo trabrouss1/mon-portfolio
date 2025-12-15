@@ -45,7 +45,7 @@ export class RealisationService {
         description: 'Mon portfolio pour présenter mes compétences, projets et expériences professionnelles de manière attrayante et accessible en ligne.',
         languages: ["Angular", "TailwindCss"],
         imageUrl: 'imgs/portfolio.png',
-        link: 'https://trabrouss.github.io/portfolio-ui/',
+        link: 'https://tba-portfolio.vercel.app/',
         role: 'Frontend Developer',
         company: 'Perso'
       },
