@@ -16,7 +16,7 @@ export class RealisationService {
         description: 'Un progiciel de gestion intégré (ERP) conçu sur mesure pour l’Institut des Sciences Islamiques afin de faciliter et d’automatiser les tâches quotidiennes.',
         languages: ["Spring Boot", "Postgresql", "Flyway", "Redis"],
         imageUrl: 'imgs/markaz-manager.png',
-        link: 'markaz-manager.isi.ci',
+        link: 'https://markaz-manager.isi.ci',
         role: 'Backend Developer',
         company : 'Institut des Sciences Islamiques'
       },
@@ -26,7 +26,7 @@ export class RealisationService {
         description: 'Un Système Intégré de Gestion des Ecoles (SIGE) permettant la gestion complète des écoles (inscriptions, des cours et des notes etc..). Avec du multi-tenant pour gérer plusieurs écoles depuis une seule plateforme.',
         languages: ["Symfony", "Mysql", "Bootstrap"],
         imageUrl: 'imgs/sige.png',
-        link: "app.sige.africa",
+        link: "https://app.sige.africa",
         role: 'Full Stack Developer',
         company: 'Diaspora'
       },
@@ -55,7 +55,7 @@ export class RealisationService {
         description: 'Une plateforme de gestion de centre de santé qui permet aux professionnels de la santé de gérer les dossiers des patients, les rendez-vous, les prescriptions et les facturations de manière efficace et sécurisée.',
         languages: ["Spring Boot", "Postgresql"],
         imageUrl: 'imgs/keneya.png',
-        link: 'keneya-v1-dev.diaspora-expertise.com',
+        link: 'https://keneya-v1-dev.diaspora-expertise.com',
         role: 'Backend Developer',
         company: 'Diaspora'
       },
@@ -75,7 +75,7 @@ export class RealisationService {
         description: 'Application mobile et web destinée aux agences organisant les voyages pour le Hajj et la Omra. Elle permet de gérer efficacement les voyages religieux en prenant en charge la répartition manuelle et automatique des pèlerins pour les vols et les chambres, le suivi des échéanciers de versements, ainsi que la gestion de plusieurs agences avec une seule application. etc...',
         languages: ["Spring Boot", "Postgresql"],
         imageUrl: 'imgs/labayk.png',
-        link: 'labayk.youstra.ci',
+        link: 'https://labayk.youstra.ci',
         role: 'Backend Developer',
         company: 'Diaspora'
       },
