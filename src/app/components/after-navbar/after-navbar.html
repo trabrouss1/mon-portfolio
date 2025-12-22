@@ -1,7 +1,7 @@
-<div class="flex justify-center mb-8 pt-11 fade-in-item delay-2">
-    <div class="w-35 h-35 rounded-full overflow-hidden border-4 border-orange-400 shadow-xl">
-      <img src="imgs/tba.jpeg" alt="Beh Aboudramane TRAORE" class="w-full h-full object-cover">
-    </div>
+  <div class="flex justify-center mb-8 pt-11 fade-in-item delay-2">
+      <div class="w-35 h-35 rounded-full overflow-hidden border-4 border-orange-400 shadow-xl">
+        <img src="imgs/tba.jpeg" alt="Beh Aboudramane TRAORE" class="w-full h-full object-cover">
+      </div>
   </div>
   
   <p class="text-gray-600 text-lg mb-6 flex items-center justify-center gap-2 fade-in-item delay-3">
@@ -40,6 +40,13 @@
     des besoins concrets et évolutifs.
   </p>
   
-  <span class="bg-linear-to-r inline-flex items-center gap-2 to-orange-600 from-orange-500 text-white px-10 py-4 rounded-lg font-semibold text-lg transition shadow-xl cursor-default fade-in-item delay-7">
-    Explore Portfolio
-  <span>
+  <button 
+    type="button" 
+    (click)="downloadCv()" 
+    class="bg-linear-to-r inline-flex 
+      items-center gap-2 border-3 
+      hover:border-orange-600 bg-orange-500 border-white hover:bg-white hover:text-orange-600 text-white
+      dark:hover:bg-amber-50
+      px-10 py-4 rounded-lg font-semibold text-lg transition shadow-xl cursor-pointer fade-in-item delay-7">
+    Télécharger Cv
+  <button>
